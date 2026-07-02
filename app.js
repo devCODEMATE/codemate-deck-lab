@@ -36,10 +36,16 @@ function updateCatalogStatus() {
 // Tries exact set+number match first (most reliable), falls back to name-only.
 function findInCatalog(cardName, setCode, cardNumber) {
   const nameLower = cardName.toLowerCase();
-  const bySetAndNumber = standardCatalog.find(c =>
-    c.set?.ptcgoCode === setCode && c.number === cardNumber
-  );
-  if (bySetAndNumber) return bySetAndNumber;
+
+  // A specific print was requested (set + number). Only accept an EXACT match —
+  // silently substituting a different print's art (even same name) is worse
+  // than falling through to a live search, which can still find the right one.
+  if (setCode && cardNumber) {
+    return standardCatalog.find(c => c.set?.ptcgoCode === setCode && c.number === cardNumber) || null;
+  }
+
+  // No specific print requested (e.g. basic energy from Limitless) — any
+  // matching name is acceptable, there's nothing more specific to go on.
   return standardCatalog.find(c => c.name.toLowerCase() === nameLower) || null;
 }
 
