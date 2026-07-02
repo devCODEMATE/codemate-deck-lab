@@ -490,7 +490,16 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
         console.warn(`TCGdex: no results for "${cardName}" — ${url}`);
         return null;
       }
-      const match = data.find(c => c.name.toLowerCase() === cardName.toLowerCase()) || data[0];
+      // Prefer an exact name match WITH a real image; a wrong/imageless print
+      // is worse than falling through to the sketch — never build a src from
+      // a missing `image` field (that produces a broken "undefined/..." URL).
+      const withImage = data.filter(c => c.image);
+      const exactWithImage = withImage.find(c => c.name.toLowerCase() === cardName.toLowerCase());
+      const match = exactWithImage || withImage[0];
+      if (!match) {
+        console.warn(`TCGdex: results found for "${cardName}" but none had a usable image — ${url}`);
+        return null;
+      }
       console.log(`TCGdex: found "${match.name}" for "${cardName}"`);
       const st = guessType(match.name);
       return {
@@ -783,7 +792,7 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
         const localMatch = findInCatalog(name, '', '');
         const resolvedCard = localMatch || await resolveLive(name, '', '');
         if (resolvedCard) {
-          console.log(`IMPORT [energy]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" (${localMatch ? 'local' : 'live'})`);
+          console.log(`IMPORT [energy]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" image="${resolvedCard.images?.small || 'MISSING'}" (${localMatch ? 'local' : 'live'})`);
           const existing = deck.find(c => c.id === resolvedCard.id);
           if (existing) existing.quantity += quantity;
           else deck.push({ ...resolvedCard, quantity });
@@ -810,7 +819,7 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
             const localMatch = findInCatalog(name, setCode, cardNumber);
             const resolvedCard = localMatch || await resolveLive(name, setCode, cardNumber);
             if (resolvedCard) {
-              console.log(`IMPORT [fallback]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" (${localMatch ? 'local' : 'live'})`);
+              console.log(`IMPORT [fallback]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" image="${resolvedCard.images?.small || 'MISSING'}" (${localMatch ? 'local' : 'live'})`);
               const existing = deck.find(c => c.id === resolvedCard.id);
               if (existing) existing.quantity += quantity;
               else deck.push({ ...resolvedCard, quantity });
@@ -833,7 +842,7 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
       // and immune to the pokemontcg.io intermittent failures we diagnosed.
       const localMatch = findInCatalog(cardName, setCode, cardNumber);
       if (localMatch) {
-        console.log(`IMPORT [strict]: "${line}" -> id="${localMatch.id}" set="${localMatch.set?.ptcgoCode || localMatch.set?.id || ''}" number="${localMatch.number || ''}" (local, requested set="${setCode}" number="${cardNumber}")`);
+        console.log(`IMPORT [strict]: "${line}" -> id="${localMatch.id}" set="${localMatch.set?.ptcgoCode || localMatch.set?.id || ''}" number="${localMatch.number || ''}" image="${localMatch.images?.small || 'MISSING'}" (local, requested set="${setCode}" number="${cardNumber}")`);
         const existing = deck.find(c => c.id === localMatch.id);
         if (existing) existing.quantity += quantity;
         else deck.push({ ...localMatch, quantity });
@@ -847,7 +856,7 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
       // name — a wrong Pokémon's art is worse than no art for deck-building.
       const resolvedCard = await resolveLive(cardName, setCode, cardNumber);
       if (resolvedCard) {
-        console.log(`IMPORT [strict-live]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" (live, requested set="${setCode}" number="${cardNumber}" — NOT FOUND IN LOCAL CATALOG)`);
+        console.log(`IMPORT [strict-live]: "${line}" -> id="${resolvedCard.id}" set="${resolvedCard.set?.ptcgoCode || resolvedCard.set?.id || ''}" number="${resolvedCard.number || ''}" image="${resolvedCard.images?.small || 'MISSING'}" (live, requested set="${setCode}" number="${cardNumber}" — NOT FOUND IN LOCAL CATALOG)`);
         const existing = deck.find(c => c.id === resolvedCard.id);
         if (existing) existing.quantity += quantity;
         else deck.push({ ...resolvedCard, quantity });

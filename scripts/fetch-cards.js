@@ -83,6 +83,7 @@ async function fetchRegulationMark(mark) {
 const SUPPLEMENTAL_QUERIES = [
   { label: 'Basic Energy', query: 'supertype:Energy subtypes:Basic' },
   { label: 'Scarlet & Violet Promos (SVP)', query: 'set.id:svp' },
+  { label: 'Mega Evolution Promos (MEP)', query: 'set.id:mep' },
 ];
 
 function normalizeCard(card) {
