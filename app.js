@@ -156,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const setCode = (card.set && card.set.ptcgoCode) ? card.set.ptcgoCode : (card.setCode || '??');
     const number = card.number || '?';
     const shortName = name.length > 15 ? name.slice(0, 14) + '…' : name;
-    const rightText = supertype === 'Pokémon' ? 'HP ' + hp : subtype || supertype;
-    const subLine = supertype === 'Pokémon' ? (subtype || '') + ' type' : '';
+    const rightText = supertype === 'Pokémon' ? (hp ? 'HP ' + hp : '') : subtype || supertype;
+    const subLine = (supertype === 'Pokémon' && subtype) ? subtype + ' type' : '';
 
     function sh(v) { return (v * H / 182).toFixed(1); }
 
