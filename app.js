@@ -34,8 +34,20 @@ function updateCatalogStatus() {
 
 // FIX: look up a card in the local catalog before ever hitting the live API.
 // Tries exact set+number match first (most reliable), falls back to name-only.
+// Normalizes a card name for robust comparison: strips accents, apostrophes/
+// punctuation, and case, so "Pokégear" / "Pokegear" or curly vs straight
+// apostrophes in "N's" don't cause false negatives when matching by name.
+function normalizeCardName(name) {
+  return (name || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]/g, '');
+}
+
 function findInCatalog(cardName, setCode, cardNumber) {
-  const nameLower = cardName.toLowerCase();
+  const normSearch = normalizeCardName(cardName);
 
   // A specific print was requested (set + number). Only accept an EXACT match —
   // silently substituting a different print's art (even same name) is worse
@@ -46,7 +58,7 @@ function findInCatalog(cardName, setCode, cardNumber) {
 
   // No specific print requested (e.g. basic energy from Limitless) — any
   // matching name is acceptable, there's nothing more specific to go on.
-  return standardCatalog.find(c => c.name.toLowerCase() === nameLower) || null;
+  return standardCatalog.find(c => normalizeCardName(c.name) === normSearch) || null;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -61,9 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      navButtons.forEach(b => b.classList.remove('active'));
+      navButtons.forEach(b => { b.classList.remove('active'); b.removeAttribute('aria-current'); });
       sections.forEach(s => s.classList.remove('active'));
       btn.classList.add('active');
+      btn.setAttribute('aria-current', 'page');
       const target = btn.dataset.section;
       document.getElementById(target).classList.add('active');
     });
@@ -104,6 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // LOGO RESET
   // =====================
   document.querySelector('.logo').addEventListener('click', () => {
+    const openModal = document.getElementById('cardModal');
+    if (openModal) openModal.remove();
     deck = [];
     renderDeck();
     updateDeckStats();
@@ -117,9 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('extraDmg').value = '0';
     document.getElementById('opponentHp').value = '200';
     document.getElementById('damageResult').style.display = 'none';
-    navButtons.forEach(b => b.classList.remove('active'));
+    navButtons.forEach(b => { b.classList.remove('active'); b.removeAttribute('aria-current'); });
     sections.forEach(s => s.classList.remove('active'));
-    document.querySelector('[data-section="search"]').classList.add('active');
+    const searchBtn2 = document.querySelector('[data-section="search"]');
+    searchBtn2.classList.add('active');
+    searchBtn2.setAttribute('aria-current', 'page');
     document.getElementById('search').classList.add('active');
   });
 
@@ -458,15 +475,26 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000);
       const response = await fetch(
-        `https://api.pokemontcg.io/v2/cards?q=name:${encodeURIComponent(cardName)}*&pageSize=10`,
+        `https://api.pokemontcg.io/v2/cards?q=name:${encodeURIComponent(cardName)}*&pageSize=25`,
         { headers: { 'X-Api-Key': API_KEY }, signal: controller.signal }
       );
       clearTimeout(timeoutId);
       const data = await response.json();
       if (data.data && data.data.length > 0) {
         const exact = data.data.find(c => c.set?.ptcgoCode === setCode && c.number === cardNumber);
+        if (exact) return exact;
+
+        // Exact print not found — for staple cards reprinted many times across
+        // TCG history (Rare Candy, Switch, etc.), the plain name search can
+        // return a decades-old print. Prefer a currently Standard-legal one
+        // (H/I/J), and among those, the most recently released.
+        const standardMatches = data.data
+          .filter(c => ['H', 'I', 'J'].includes(c.regulationMark))
+          .sort((a, b) => new Date(b.set?.releaseDate || 0) - new Date(a.set?.releaseDate || 0));
+        if (standardMatches.length > 0) return standardMatches[0];
+
         const setM = data.data.find(c => c.set?.ptcgoCode === setCode);
-        return exact || setM || data.data[0];
+        return setM || data.data[0];
       }
     } catch (e) {
       console.warn(`pokemontcg.io: fetch threw for "${cardName}" — ${e.name}: ${e.message}`);
@@ -494,7 +522,8 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
       // is worse than falling through to the sketch — never build a src from
       // a missing `image` field (that produces a broken "undefined/..." URL).
       const withImage = data.filter(c => c.image);
-      const exactWithImage = withImage.find(c => c.name.toLowerCase() === cardName.toLowerCase());
+      const normSearch = normalizeCardName(cardName);
+      const exactWithImage = withImage.find(c => normalizeCardName(c.name) === normSearch);
       const match = exactWithImage || withImage[0];
       if (!match) {
         console.warn(`TCGdex: results found for "${cardName}" but none had a usable image — ${url}`);
@@ -594,14 +623,31 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
   function openCardModal(card) {
     const existing = document.getElementById('cardModal');
     if (existing) existing.remove();
-    const largeImg = card.images?.large || card.images?.small || '';
+    const hasRealArt = !!(card.images?.large || card.images?.small);
     const overlay = document.createElement('div');
     overlay.className = 'card-modal-overlay';
     overlay.id = 'cardModal';
-    overlay.innerHTML = `
-      <span class="card-modal-close">✕</span>
-      <img src="${largeImg}" class="card-modal-img" alt="${card.name}">
-    `;
+
+    if (hasRealArt) {
+      const largeImg = card.images.large || card.images.small;
+      overlay.innerHTML = `
+        <span class="card-modal-close">✕</span>
+        <img src="${largeImg}" class="card-modal-img" alt="${card.name}">
+      `;
+    } else {
+      // No real artwork indexed yet anywhere (local catalog, pokemontcg.io, TCGdex) —
+      // show the sketch in grayscale with a small unobtrusive "coming soon" badge,
+      // instead of a big text-heavy placeholder blocking the whole view.
+      const sketchImg = sketchToDataURI(card, 400, 560);
+      overlay.innerHTML = `
+        <span class="card-modal-close">✕</span>
+        <div class="card-modal-sketch-wrap">
+          <img src="${sketchImg}" class="card-modal-img card-modal-img-sketch" alt="${card.name} (artwork coming soon)">
+          <span class="card-modal-soon-badge">🕒 Artwork coming soon</span>
+        </div>
+      `;
+    }
+
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay || e.target.classList.contains('card-modal-close')) {
         overlay.remove();
@@ -674,30 +720,40 @@ ${W > 60 ? `<text x="9" y="${H-22}" font-family="Caveat,cursive" font-size="9" f
     const sorted = [...deck].sort((a, b) => order.indexOf(a.supertype) - order.indexOf(b.supertype));
     deckList.innerHTML = '';
     sorted.forEach(card => {
-      const row = document.createElement('div');
-      row.className = 'deck-card-row';
+      const cardEl = document.createElement('div');
+      cardEl.className = 'deck-card-item';
+
+      // Build the static info HTML FIRST — appending the image element via
+      // innerHTML += afterwards would re-serialize the DOM and silently
+      // strip any event listeners already attached to it.
+      cardEl.innerHTML = `
+        <div class="deck-card-info">
+          <div class="deck-card-name">${card.name}</div>
+          <div class="deck-card-type">${card.supertype}</div>
+          <div class="qty-controls">
+            <button class="qty-btn" onclick="removeFromDeck('${card.id}')" aria-label="Remove one ${card.name}">−</button>
+            <span class="qty-number">${card.quantity}</span>
+            <button class="qty-btn" onclick="addToDeckById('${card.id}')" aria-label="Add one ${card.name}">+</button>
+          </div>
+        </div>
+        <button class="remove-btn" onclick="removeFully('${card.id}')" aria-label="Remove all ${card.name}">✕</button>
+      `;
+
+      // NOW create the image and attach its listener, then insert it as the
+      // first child — this element is never touched by innerHTML again.
       const imgEl = document.createElement('img');
-      imgEl.style.cssText = 'width:40px;height:56px;border-radius:4px;flex-shrink:0;object-fit:cover;cursor:zoom-in;';
+      imgEl.className = 'deck-card-img';
       imgEl.alt = card.name;
+      imgEl.title = 'Click to zoom';
       if (card.images?.small) {
         imgEl.src = card.images.small;
-        imgEl.onerror = () => { imgEl.src = sketchToDataURI(card, 40, 56); };
+        imgEl.onerror = () => { imgEl.src = sketchToDataURI(card, 200, 280); };
       } else {
-        imgEl.src = sketchToDataURI(card, 40, 56);
+        imgEl.src = sketchToDataURI(card, 200, 280);
       }
-      imgEl.addEventListener('click', () => openCardModal(card)); // FIX: zoom now works in Deck Builder too
-      row.appendChild(imgEl);
-      row.innerHTML += `
-        <div class="deck-card-name">${card.name}</div>
-        <div class="deck-card-type">${card.supertype}</div>
-        <div class="qty-controls">
-          <button class="qty-btn" onclick="removeFromDeck('${card.id}')">−</button>
-          <span class="qty-number">${card.quantity}</span>
-          <button class="qty-btn" onclick="addToDeckById('${card.id}')">+</button>
-        </div>
-        <button class="remove-btn" onclick="removeFully('${card.id}')">✕</button>
-      `;
-      deckList.appendChild(row);
+      imgEl.addEventListener('click', () => openCardModal(card));
+      cardEl.insertBefore(imgEl, cardEl.firstChild);
+      deckList.appendChild(cardEl);
     });
   }
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeMate Deck Lab</title>
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=11">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
@@ -13,11 +13,11 @@
   <!-- HEADER -->
   <header class="header">
     <div class="logo-wrapper">
-      <img src="images/codemate-avatar.png" alt="CodeMate" class="logo-img">
-      <div class="logo"> >_ CodeMate Deck Lab</div>
+      <img src="images/codemate-avatar.png" alt="CodeMate mascot" class="logo-img">
+      <h1 class="logo"> >_ CodeMate Deck Lab</h1>
     </div>
-    <nav class="nav">
-      <button class="nav-btn active" data-section="search">Card Search</button>
+    <nav class="nav" aria-label="Main sections">
+      <button class="nav-btn active" data-section="search" aria-current="page">Card Search</button>
       <button class="nav-btn" data-section="builder">Deck Builder</button>
       <button class="nav-btn" data-section="simulator">Hand Simulator</button>
       <button class="nav-btn" data-section="damage">Damage Calc</button>
@@ -148,6 +148,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20"></script>
+  <script src="app.js?v=24"></script>
 </body>
 </html>
