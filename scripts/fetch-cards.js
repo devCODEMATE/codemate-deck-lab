@@ -66,26 +66,36 @@ async function mapWithConcurrency(items, limit, fn) {
 // -------------------------------------------------------------------------
 // Step 1: get every Standard-legal set (legality is defined per-set in TCGdex,
 // not per-card — much simpler than the old regulationMark card-by-card check)
+//
+// NOTE: we deliberately do NOT rely on `?legal.standard=eq:true` as a server-
+// side filter — in practice it returned 0 results (the nested boolean filter
+// doesn't behave as the docs suggest for this endpoint). Instead we fetch
+// every set brief, then fetch each one's full detail and check `legal.standard`
+// ourselves. Slower, but it only relies on fields we've directly confirmed
+// exist in the full Set object response.
 // -------------------------------------------------------------------------
-async function fetchStandardSetIds() {
-  console.log('Fetching Standard-legal sets...');
-  const sets = await fetchJSON(`${API_BASE}/sets?legal.standard=eq:true`);
-  console.log(`  Found ${sets.length} Standard-legal sets.`);
-  return sets.map((s) => s.id);
+async function fetchStandardSets() {
+  console.log('Fetching all sets...');
+  const setBriefs = await fetchJSON(`${API_BASE}/sets`);
+  console.log(`  Found ${setBriefs.length} total sets. Checking which are Standard-legal...`);
+
+  const checked = await mapWithConcurrency(setBriefs, CONCURRENCY, async (brief) => {
+    try {
+      const full = await fetchJSON(`${API_BASE}/sets/${brief.id}`);
+      return full.legal?.standard ? full : null; // keep the FULL object — reused below, no re-fetch needed
+    } catch (err) {
+      console.warn(`  Could not check legality for set ${brief.id} — ${err.message}`);
+      return null;
+    }
+  });
+
+  const standardSets = checked.filter(Boolean);
+  console.log(`  -> ${standardSets.length} Standard-legal sets.`);
+  return standardSets;
 }
 
 // -------------------------------------------------------------------------
-// Step 2: for each set, get the full set object (includes card list + the
-// official Pokémon TCG Live set code in `tcgOnline`, which is what your
-// decklist imports match against — this is the equivalent of pokemontcg.io's
-// `ptcgoCode`)
-// -------------------------------------------------------------------------
-async function fetchSetDetail(setId) {
-  return fetchJSON(`${API_BASE}/sets/${setId}`);
-}
-
-// -------------------------------------------------------------------------
-// Step 3: for each card brief in a set, get the full card object (hp, types,
+// Step 2: for each card brief in a Standard set, get the full card object (hp, types,
 // rarity, regulationMark, legal, images, weaknesses, etc.)
 // -------------------------------------------------------------------------
 async function fetchCardDetail(cardId) {
@@ -153,16 +163,15 @@ function normalizeCard(card, setBrief) {
 async function main() {
   console.log('=== CodeMate Deck Lab — Standard Card Fetcher (TCGdex) ===');
 
-  const setIds = await fetchStandardSetIds();
+  const standardSets = await fetchStandardSets();
 
   const allCards = [];
   let setsProcessed = 0;
 
-  for (const setId of setIds) {
-    const setDetail = await fetchSetDetail(setId);
+  for (const setDetail of standardSets) {
     const cardBriefs = setDetail.cards || [];
     setsProcessed++;
-    console.log(`\n[${setsProcessed}/${setIds.length}] ${setDetail.name} (${setId}) — ${cardBriefs.length} cards`);
+    console.log(`\n[${setsProcessed}/${standardSets.length}] ${setDetail.name} (${setDetail.id}) — ${cardBriefs.length} cards`);
 
     const fullCards = await mapWithConcurrency(cardBriefs, CONCURRENCY, async (brief) => {
       try {
