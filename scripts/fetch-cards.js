@@ -81,15 +81,29 @@ async function fetchStandardSets() {
 
   const checked = await mapWithConcurrency(setBriefs, CONCURRENCY, async (brief) => {
     try {
-      const full = await fetchJSON(`${API_BASE}/sets/${brief.id}`);
-      return full.legal?.standard ? full : null; // keep the FULL object — reused below, no re-fetch needed
+      return await fetchJSON(`${API_BASE}/sets/${brief.id}`);
     } catch (err) {
       console.warn(`  Could not check legality for set ${brief.id} — ${err.message}`);
       return null;
     }
   });
 
-  const standardSets = checked.filter(Boolean);
+  const validSets = checked.filter(Boolean);
+
+  // DIAGNOSTIC: print the 15 most recently released sets with their raw
+  // `legal` field exactly as TCGdex returns it — no assumptions, no
+  // normalization. This tells us definitively whether the field exists,
+  // what it's actually called, and what shape it has.
+  const byRecency = [...validSets].sort(
+    (a, b) => new Date(b.releaseDate || 0) - new Date(a.releaseDate || 0)
+  );
+  console.log('\n--- DIAGNOSTIC: 15 most recent sets, raw `legal` field ---');
+  byRecency.slice(0, 15).forEach((s) => {
+    console.log(`  ${s.releaseDate || '????-??-??'}  ${s.id.padEnd(10)} ${s.name.padEnd(30)} legal=${JSON.stringify(s.legal)}`);
+  });
+  console.log('--- END DIAGNOSTIC ---\n');
+
+  const standardSets = validSets.filter((s) => s.legal?.standard);
   console.log(`  -> ${standardSets.length} Standard-legal sets.`);
   return standardSets;
 }
