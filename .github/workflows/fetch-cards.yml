@@ -8,6 +8,7 @@ on:
 jobs:
   fetch-cards:
     runs-on: ubuntu-latest
+    timeout-minutes: 30 # first run (no cache yet) can take a while; later runs will be fast
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -17,15 +18,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch Standard card catalog
-        env:
-          POKEMONTCG_API_KEY: ${{ secrets.POKEMONTCG_API_KEY }}
-        run: node scripts/fetch-cards.js
+      - name: Fetch and cache TCGdex card data
+        run: node scripts/fetch-tcgdex.js
+
+      - name: Build Standard catalog from cache
+        run: node scripts/build-standard-catalog.js
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/standard-cards.json
+          git add data/standard-cards.json data/sets.json data/cards/by-set/
           git diff --staged --quiet || git commit -m "chore: update standard card catalog [skip ci]"
           git push

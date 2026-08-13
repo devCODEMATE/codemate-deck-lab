@@ -1,243 +1,180 @@
 #!/usr/bin/env node
 /**
- * scripts/fetch-cards.js
- * Fetches all Standard-legal Pokémon TCG cards from api.tcgdex.net
- * and caches them locally as data/standard-cards.json
+ * scripts/fetch-tcgdex.js
+ * -----------------------------------------------------------------------
+ * Trae y CACHEA las cartas de TCGdex (api.tcgdex.net) para los sets que
+ * pueden contener cartas Standard-legales (H/I/J), y las guarda en:
  *
- * Migrated from pokemontcg.io/Scrydex (paid, rate-limited) to TCGdex
- * (free, open-source, no API key required) — Aug 2026.
+ *   data/cards/by-set/{setId}.json   (cartas completas de ese set)
+ *   data/sets.json                    (metadata de todos los sets relevantes)
  *
- * Usage: node scripts/fetch-cards.js
- * Env:   none required. TCGdex has no auth and no published hard rate limit,
- *        but we still throttle concurrent requests to be considerate (see
- *        CONCURRENCY below), per TCGdex's own FAQ guidance.
+ * Adaptado del patrón usado en codemate-pokedex-collection (fetch-tcgdex.js)
+ * — mismo truco de caché: si un set YA tiene su archivo guardado, no lo
+ * vuelve a descargar. Por eso las corridas mensuales, después de la primera,
+ * son rápidas: solo bajan los sets NUEVOS que hayan salido ese mes.
+ *
+ * A diferencia de Pokédex Collection, acá NO guardamos el catálogo entero
+ * (no hace falta para Deck Lab) — solo sets con releaseDate >= 2023-01-01,
+ * que es el universo posible de cartas con marca H/I/J.
+ *
+ * Uso:
+ *   node scripts/fetch-tcgdex.js                 -> trae/actualiza todo
+ *   node scripts/fetch-tcgdex.js --force          -> ignora la caché y re-descarga todo
+ *
+ * Requiere Node 18+ (usa fetch nativo).
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const API_BASE = 'https://api.tcgdex.net/v2/en';
-const LANG = 'en';
-const CONCURRENCY = 15; // parallel card detail requests — polite but fast
-const MAX_RETRIES = 5;
-const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'standard-cards.json');
-const MIN_EXPECTED_CARDS = 2000; // sanity floor — adjust once you see a real successful count
+const args = process.argv.slice(2).reduce((acc, arg) => {
+  const [key, value] = arg.replace(/^--/, '').split('=');
+  acc[key] = value ?? true;
+  return acc;
+}, {});
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+const LANG = 'en';
+const API = `https://api.tcgdex.net/v2/${LANG}`;
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const CARDS_DIR = path.join(DATA_DIR, 'cards', 'by-set');
+const CONCURRENCY = 8;
+const force = Boolean(args.force);
+
+// Igual que en fetch-cards.js: las marcas de regulación no existían antes de
+// la era Scarlet & Violet (marca G, marzo 2023). Cualquier set anterior a
+// esta fecha NO puede tener cartas H/I/J — no hace falta ni mirarlo.
+const EARLIEST_RELEVANT_RELEASE_DATE = '2023-01-01';
+
+function log(msg) {
+  console.log(`[fetch-tcgdex] ${msg}`);
 }
 
-async function fetchJSON(url, retries = MAX_RETRIES) {
+async function fetchJSON(url, retries = 5) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       const res = await fetch(url);
-      if (res.ok) return await res.json();
-      console.warn(`  Attempt ${attempt}/${retries} failed with status ${res.status} — ${url}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status} en ${url}`);
+      return await res.json();
     } catch (err) {
-      console.warn(`  Attempt ${attempt}/${retries} threw: ${err.message} — ${url}`);
-    }
-    if (attempt < retries) {
-      const backoff = 1000 * attempt * attempt; // 1s, 4s, 9s, 16s, 25s
-      await sleep(backoff);
+      if (attempt === retries) throw err;
+      await new Promise((r) => setTimeout(r, 1000 * attempt * attempt));
     }
   }
-  throw new Error(`Failed to fetch after ${retries} attempts: ${url}`);
 }
 
-// Run async tasks with a concurrency cap, so we don't blast TCGdex with
-// thousands of simultaneous requests. Returns results in the same order.
-async function mapWithConcurrency(items, limit, fn) {
-  const results = new Array(items.length);
-  let nextIndex = 0;
-
-  async function worker() {
-    while (true) {
-      const i = nextIndex++;
-      if (i >= items.length) return;
-      results[i] = await fn(items[i], i);
+/**
+ * Trae una carta con dos intentos, igual que en Pokédex Collection:
+ *   1) por su id combinado: /cards/{setId}-{localId}
+ *   2) si falla, por set + número local por separado
+ */
+async function fetchCardResilient(brief, setId, failedList) {
+  try {
+    return await fetchJSON(`${API}/cards/${encodeURIComponent(brief.id)}`);
+  } catch (firstErr) {
+    try {
+      const viaLocalId = await fetchJSON(
+        `${API}/sets/${encodeURIComponent(setId)}/cards/${encodeURIComponent(brief.localId)}`
+      );
+      log(`  -> "${brief.id}" se recuperó por la vía set+localId.`);
+      return viaLocalId;
+    } catch (secondErr) {
+      log(`  ATENCIÓN: no se pudo traer "${brief.id}" (${secondErr.message}). La salteo.`);
+      failedList.push({ label: brief.id, error: secondErr.message });
+      return null;
     }
   }
+}
 
-  const workers = Array.from({ length: Math.min(limit, items.length) }, worker);
-  await Promise.all(workers);
+async function runPool(items, worker, concurrency = CONCURRENCY) {
+  const results = new Array(items.length);
+  let next = 0;
+  async function runner() {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await worker(items[i], i);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, runner));
   return results;
 }
 
-// -------------------------------------------------------------------------
-// Step 1: get every Standard-legal set (legality is defined per-set in TCGdex,
-// not per-card — much simpler than the old regulationMark card-by-card check)
-//
-// NOTE: we deliberately do NOT rely on `?legal.standard=eq:true` as a server-
-// side filter — in practice it returned 0 results (the nested boolean filter
-// doesn't behave as the docs suggest for this endpoint). Instead we fetch
-// every set brief, then fetch each one's full detail and check `legal.standard`
-// ourselves. Slower, but it only relies on fields we've directly confirmed
-// exist in the full Set object response.
-// -------------------------------------------------------------------------
-async function fetchStandardSets() {
-  console.log('Fetching all sets...');
-  const setBriefs = await fetchJSON(`${API_BASE}/sets`);
-  console.log(`  Found ${setBriefs.length} total sets. Checking which are Standard-legal...`);
-
-  const checked = await mapWithConcurrency(setBriefs, CONCURRENCY, async (brief) => {
-    try {
-      return await fetchJSON(`${API_BASE}/sets/${brief.id}`);
-    } catch (err) {
-      console.warn(`  Could not check legality for set ${brief.id} — ${err.message}`);
-      return null;
-    }
-  });
-
-  const validSets = checked.filter(Boolean);
-
-  // DIAGNOSTIC: print the 15 most recently released sets with their raw
-  // `legal` field exactly as TCGdex returns it — no assumptions, no
-  // normalization. This tells us definitively whether the field exists,
-  // what it's actually called, and what shape it has.
-  const byRecency = [...validSets].sort(
-    (a, b) => new Date(b.releaseDate || 0) - new Date(a.releaseDate || 0)
-  );
-  console.log('\n--- DIAGNOSTIC: 15 most recent sets, raw `legal` field ---');
-  byRecency.slice(0, 15).forEach((s) => {
-    console.log(`  ${s.releaseDate || '????-??-??'}  ${s.id.padEnd(10)} ${s.name.padEnd(30)} legal=${JSON.stringify(s.legal)}`);
-  });
-  console.log('--- END DIAGNOSTIC ---\n');
-
-  const standardSets = validSets.filter((s) => s.legal?.standard);
-  console.log(`  -> ${standardSets.length} Standard-legal sets.`);
-  return standardSets;
-}
-
-// -------------------------------------------------------------------------
-// Step 2: for each card brief in a Standard set, get the full card object (hp, types,
-// rarity, regulationMark, legal, images, weaknesses, etc.)
-// -------------------------------------------------------------------------
-async function fetchCardDetail(cardId) {
-  return fetchJSON(`${API_BASE}/cards/${cardId}`);
-}
-
-// TCGdex `category` has no accent ("Pokemon"); your app checks the accented
-// pokemontcg.io style ("Pokémon") everywhere (sorting, mulligan check, deck
-// stats), so we normalize it here — this is the single most important
-// conversion in this whole script.
-function normalizeSupertype(category) {
-  if (category === 'Pokemon') return 'Pokémon';
-  return category; // "Trainer" / "Energy" already match
-}
-
-// Build a pokemontcg.io-style `subtypes` array from TCGdex's separate fields,
-// since your app checks `card.subtypes?.includes('Basic')` and reads
-// `subtypes[0]` as a display label.
-function buildSubtypes(card, supertype) {
-  if (supertype === 'Pokémon') {
-    const subtypes = [];
-    if (card.stage) {
-      // "Stage1" -> "Stage 1", "Stage2" -> "Stage 2", "Basic" stays "Basic"
-      subtypes.push(card.stage.replace(/^Stage(\d)$/, 'Stage $1'));
-    }
-    if (card.suffix) subtypes.push(card.suffix); // "ex", "V", "VMAX", etc.
-    return subtypes;
-  }
-  if (supertype === 'Trainer') {
-    return card.trainerType ? [card.trainerType] : []; // "Item" / "Supporter" / "Stadium"
-  }
-  if (supertype === 'Energy') {
-    return card.energyType ? [card.energyType] : []; // "Basic" / "Special"
-  }
-  return [];
-}
-
-function normalizeCard(card, setBrief) {
-  const supertype = normalizeSupertype(card.category);
+function setMeta(setDetail) {
   return {
-    id: card.id,
-    name: card.name,
-    supertype,
-    subtypes: buildSubtypes(card, supertype),
-    hp: card.hp || null,
-    types: card.types || [],
-    regulationMark: card.regulationMark || null,
-    rarity: card.rarity || null,
-    weaknesses: card.weaknesses || [],
-    set: {
-      id: setBrief.id,
-      name: setBrief.name,
-      series: setBrief.serie?.name || null,
-      ptcgoCode: setBrief.tcgOnline || null, // <- the field your app matches decklist imports against
-      releaseDate: setBrief.releaseDate || null,
-    },
-    number: String(card.localId),
-    images: {
-      small: card.image ? `${card.image}/low.webp` : null,
-      large: card.image ? `${card.image}/high.webp` : null,
-    },
+    id: setDetail.id,
+    name: setDetail.name,
+    logo: setDetail.logo || null,
+    symbol: setDetail.symbol || null,
+    serie: setDetail.serie || null,
+    releaseDate: setDetail.releaseDate || null,
+    tcgOnline: setDetail.tcgOnline || null,
+    cardCount: setDetail.cardCount,
   };
 }
 
 async function main() {
-  console.log('=== CodeMate Deck Lab — Standard Card Fetcher (TCGdex) ===');
+  fs.mkdirSync(CARDS_DIR, { recursive: true });
 
-  const standardSets = await fetchStandardSets();
+  log('Trayendo lista de sets...');
+  const setBriefs = await fetchJSON(`${API}/sets`);
+  log(`Total de sets en TCGdex: ${setBriefs.length}`);
 
-  const allCards = [];
-  let setsProcessed = 0;
+  // Un solo fetch por set para saber su fecha — barato, y nos deja descartar
+  // de entrada todo lo anterior a 2023 sin tocar ni una carta.
+  log('Chequeando fechas de lanzamiento...');
+  const setDetails = await runPool(setBriefs, (brief) => fetchJSON(`${API}/sets/${brief.id}`));
+  const relevantSets = setDetails.filter((s) => s.releaseDate && s.releaseDate >= EARLIEST_RELEVANT_RELEASE_DATE);
+  log(`  -> ${relevantSets.length} sets relevantes (desde ${EARLIEST_RELEVANT_RELEASE_DATE}).`);
 
-  for (const setDetail of standardSets) {
-    const cardBriefs = setDetail.cards || [];
-    setsProcessed++;
-    console.log(`\n[${setsProcessed}/${standardSets.length}] ${setDetail.name} (${setDetail.id}) — ${cardBriefs.length} cards`);
+  const allSetsMeta = [];
+  let totalCards = 0;
+  let setsSkippedFromCache = 0;
+  const failedCards = [];
 
-    const fullCards = await mapWithConcurrency(cardBriefs, CONCURRENCY, async (brief) => {
-      try {
-        const full = await fetchCardDetail(brief.id);
-        return normalizeCard(full, setDetail);
-      } catch (err) {
-        console.warn(`  Skipping ${brief.id} (${brief.name}) — ${err.message}`);
-        return null;
+  for (let i = 0; i < relevantSets.length; i++) {
+    const setDetail = relevantSets[i];
+    log(`Set ${i + 1}/${relevantSets.length}: ${setDetail.id} (${setDetail.name})`);
+    allSetsMeta.push(setMeta(setDetail));
+
+    const outFile = path.join(CARDS_DIR, `${setDetail.id}.json`);
+
+    if (!force && fs.existsSync(outFile)) {
+      log('  -> ya está en caché, lo salteo (usá --force para re-descargar)');
+      const cached = JSON.parse(fs.readFileSync(outFile, 'utf8'));
+      totalCards += cached.length;
+      setsSkippedFromCache += 1;
+      continue;
+    }
+
+    const briefs = setDetail.cards;
+    log(`  -> ${briefs.length} cartas, descargando detalle completo...`);
+
+    let done = 0;
+    const fullCards = await runPool(briefs, async (brief) => {
+      const full = await fetchCardResilient(brief, setDetail.id, failedCards);
+      done++;
+      if (done % 20 === 0 || done === briefs.length) {
+        process.stdout.write(`\r  -> ${done}/${briefs.length} cartas`);
       }
+      return full || { ...brief, incomplete: true };
     });
+    process.stdout.write('\n');
 
-    const okCards = fullCards.filter(Boolean);
-    console.log(`  -> ${okCards.length}/${cardBriefs.length} fetched successfully`);
-    allCards.push(...okCards);
+    fs.writeFileSync(outFile, JSON.stringify(fullCards, null, 2));
+    totalCards += fullCards.length;
+    log(`  -> guardado en ${path.relative(process.cwd(), outFile)}`);
   }
 
-  // Dedupe by id (safety net)
-  const seen = new Set();
-  const deduped = allCards.filter((c) => {
-    if (seen.has(c.id)) return false;
-    seen.add(c.id);
-    return true;
-  });
+  fs.writeFileSync(path.join(DATA_DIR, 'sets.json'), JSON.stringify(allSetsMeta, null, 2));
 
-  let missingImages = 0;
-  deduped.forEach((c) => {
-    if (!c.images.small) missingImages++;
-  });
-
-  console.log(`\nTotal unique cards fetched: ${deduped.length}`);
-  console.log(`Cards missing image: ${missingImages}`);
-
-  if (deduped.length < MIN_EXPECTED_CARDS) {
-    console.error(`\nABORT: only got ${deduped.length} cards, expected at least ${MIN_EXPECTED_CARDS}.`);
-    console.error('Not writing output file — keeping previous cached data intact.');
-    process.exit(1);
+  log(
+    `Listo. ${allSetsMeta.length} sets relevantes (${setsSkippedFromCache} ya estaban en caché), ${totalCards} cartas en total.`
+  );
+  if (failedCards.length) {
+    log(`ATENCIÓN: ${failedCards.length} carta(s) no se pudieron traer. Revisar failedCards en el log de arriba.`);
   }
-
-  const output = {
-    lastUpdated: new Date().toISOString(),
-    totalCards: deduped.length,
-    source: 'tcgdex',
-    cards: deduped,
-  };
-
-  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2));
-
-  console.log(`\nSaved to ${OUTPUT_PATH}`);
 }
 
 main().catch((err) => {
-  console.error('\nFATAL:', err.message);
+  console.error('[fetch-tcgdex] ERROR:', err);
   process.exit(1);
 });
