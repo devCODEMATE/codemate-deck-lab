@@ -9,6 +9,8 @@ jobs:
   fetch-cards:
     runs-on: ubuntu-latest
     timeout-minutes: 30 # first run (no cache yet) can take a while; later runs will be fast
+    permissions:
+      contents: write # allows the bot to commit and push data/ changes back to the repo
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
