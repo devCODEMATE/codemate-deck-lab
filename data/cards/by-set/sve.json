@@ -1,0 +1,3338 @@
+[
+  {
+    "category": "Energy",
+    "id": "sve-001",
+    "localId": "001",
+    "name": "Grass Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 689750,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.05,
+            "avg7": 0.04,
+            "avg30": 0.03,
+            "avg-holo": 0.11,
+            "low-holo": 0.02,
+            "trend-holo": 0.13,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.16,
+            "avg30-holo": 0.34
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 735364,
+            "avg": 0.4,
+            "low": 0.02,
+            "trend": 0.4,
+            "avg1": 0.68,
+            "avg7": 0.51,
+            "avg30": 0.45,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 780803,
+            "avg": null,
+            "low": 0.02,
+            "trend": 0,
+            "avg1": null,
+            "avg7": null,
+            "avg30": null,
+            "avg-holo": 0.27,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.2,
+            "avg30-holo": 0.26
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562155,
+              "lowPrice": 0.01,
+              "midPrice": 0.5,
+              "highPrice": 999,
+              "marketPrice": 0.53,
+              "directLowPrice": 0.97
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.764Z",
+        "unit": "EUR",
+        "idProduct": 689750,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.05,
+        "avg7": 0.04,
+        "avg30": 0.03,
+        "avg-holo": 0.11,
+        "low-holo": 0.02,
+        "trend-holo": 0.13,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.16,
+        "avg30-holo": 0.34
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-002",
+    "localId": "002",
+    "name": "Fire Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 689751,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.05,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.18,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.25,
+            "avg30-holo": 0.26
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 735366,
+            "avg": 0.45,
+            "low": 0.02,
+            "trend": 0.35,
+            "avg1": 0.56,
+            "avg7": 0.49,
+            "avg30": 0.45,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 780804,
+            "avg": null,
+            "low": 0.02,
+            "trend": 0,
+            "avg1": null,
+            "avg7": null,
+            "avg30": null,
+            "avg-holo": 0.3,
+            "low-holo": 0.02,
+            "trend-holo": 0.26,
+            "avg1-holo": 0.18,
+            "avg7-holo": 0.23,
+            "avg30-holo": 0.27
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562160,
+              "lowPrice": 0.12,
+              "midPrice": 0.35,
+              "highPrice": 999,
+              "marketPrice": 0.36,
+              "directLowPrice": 0.35
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.189Z",
+        "unit": "EUR",
+        "idProduct": 689751,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.05,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.18,
+        "low-holo": 0.02,
+        "trend-holo": 0.18,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.25,
+        "avg30-holo": 0.26
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-003",
+    "localId": "003",
+    "name": "Water Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 689753,
+            "avg": 0.02,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.05,
+            "avg7": 0.02,
+            "avg30": 0.02,
+            "avg-holo": 0.14,
+            "low-holo": 0.02,
+            "trend-holo": 0.14,
+            "avg1-holo": 0.02,
+            "avg7-holo": 0.22,
+            "avg30-holo": 0.25
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 735367,
+            "avg": 0.53,
+            "low": 0.02,
+            "trend": 0.32,
+            "avg1": 0.58,
+            "avg7": 0.58,
+            "avg30": 0.51,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 780805,
+            "avg": 0.15,
+            "low": 0.02,
+            "trend": 0.15,
+            "avg1": 0.15,
+            "avg7": 0.15,
+            "avg30": 0.15,
+            "avg-holo": 0.25,
+            "low-holo": 0.02,
+            "trend-holo": 0.19,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.19,
+            "avg30-holo": 0.22
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 563014,
+              "lowPrice": 0.1,
+              "midPrice": 0.38,
+              "highPrice": 999,
+              "marketPrice": 0.38,
+              "directLowPrice": 0.53
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.685Z",
+        "unit": "EUR",
+        "idProduct": 689753,
+        "avg": 0.02,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.05,
+        "avg7": 0.02,
+        "avg30": 0.02,
+        "avg-holo": 0.14,
+        "low-holo": 0.02,
+        "trend-holo": 0.14,
+        "avg1-holo": 0.02,
+        "avg7-holo": 0.22,
+        "avg30-holo": 0.25
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-004",
+    "localId": "004",
+    "name": "Lightning Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 689755,
+            "avg": 0.02,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.02,
+            "avg7": 0.04,
+            "avg30": 0.03,
+            "avg-holo": 0.18,
+            "low-holo": 0.02,
+            "trend-holo": 0.13,
+            "avg1-holo": 0.02,
+            "avg7-holo": 0.18,
+            "avg30-holo": 0.28
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 735368,
+            "avg": 0.43,
+            "low": 0.02,
+            "trend": 0.31,
+            "avg1": 0.21,
+            "avg7": 0.3,
+            "avg30": 0.39,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 780808,
+            "avg": 0.15,
+            "low": 0.02,
+            "trend": 0.15,
+            "avg1": 0.15,
+            "avg7": 0.15,
+            "avg30": 0.15,
+            "avg-holo": 0.28,
+            "low-holo": 0.02,
+            "trend-holo": 0.23,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.27,
+            "avg30-holo": 0.24
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562152,
+              "lowPrice": 0.1,
+              "midPrice": 0.33,
+              "highPrice": 999,
+              "marketPrice": 0.33,
+              "directLowPrice": 0.35
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 689755,
+        "avg": 0.02,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.02,
+        "avg7": 0.04,
+        "avg30": 0.03,
+        "avg-holo": 0.18,
+        "low-holo": 0.02,
+        "trend-holo": 0.13,
+        "avg1-holo": 0.02,
+        "avg7-holo": 0.18,
+        "avg30-holo": 0.28
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-005",
+    "localId": "005",
+    "name": "Psychic Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 689757,
+            "avg": 0.02,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.05,
+            "avg7": 0.02,
+            "avg30": 0.03,
+            "avg-holo": 0.09,
+            "low-holo": 0.02,
+            "trend-holo": 0.16,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.17,
+            "avg30-holo": 0.21
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 735370,
+            "avg": 0.58,
+            "low": 0.02,
+            "trend": 0.39,
+            "avg1": 0.35,
+            "avg7": 0.53,
+            "avg30": 0.58,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 780806,
+            "avg": null,
+            "low": 0.02,
+            "trend": 0,
+            "avg1": null,
+            "avg7": null,
+            "avg30": null,
+            "avg-holo": 0.32,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.03,
+            "avg7-holo": 0.21,
+            "avg30-holo": 0.28
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562157,
+              "lowPrice": 0.04,
+              "midPrice": 0.42,
+              "highPrice": 999,
+              "marketPrice": 0.42,
+              "directLowPrice": 0.4
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.256Z",
+        "unit": "EUR",
+        "idProduct": 689757,
+        "avg": 0.02,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.05,
+        "avg7": 0.02,
+        "avg30": 0.03,
+        "avg-holo": 0.09,
+        "low-holo": 0.02,
+        "trend-holo": 0.16,
+        "avg1-holo": 0.1,
+        "avg7-holo": 0.17,
+        "avg30-holo": 0.21
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-006",
+    "localId": "006",
+    "name": "Fighting Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 689758,
+            "avg": 0.02,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.05,
+            "avg7": 0.02,
+            "avg30": 0.02,
+            "avg-holo": 0.21,
+            "low-holo": 0.02,
+            "trend-holo": 0.2,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.21,
+            "avg30-holo": 0.22
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 735371,
+            "avg": 0.42,
+            "low": 0.02,
+            "trend": 0.35,
+            "avg1": 0.31,
+            "avg7": 0.42,
+            "avg30": 0.4,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 780807,
+            "avg": null,
+            "low": 0.02,
+            "trend": 0,
+            "avg1": null,
+            "avg7": null,
+            "avg30": null,
+            "avg-holo": 0.23,
+            "low-holo": 0.02,
+            "trend-holo": 0.2,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.26,
+            "avg30-holo": 0.21
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562158,
+              "lowPrice": 0.11,
+              "midPrice": 0.36,
+              "highPrice": 999,
+              "marketPrice": 0.36,
+              "directLowPrice": 0.4
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.189Z",
+        "unit": "EUR",
+        "idProduct": 689758,
+        "avg": 0.02,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.05,
+        "avg7": 0.02,
+        "avg30": 0.02,
+        "avg-holo": 0.21,
+        "low-holo": 0.02,
+        "trend-holo": 0.2,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.21,
+        "avg30-holo": 0.22
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-007",
+    "localId": "007",
+    "name": "Darkness Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 689760,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.02,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.16,
+            "low-holo": 0.02,
+            "trend-holo": 0.34,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.17,
+            "avg30-holo": 0.42
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 735372,
+            "avg": 0.65,
+            "low": 0.02,
+            "trend": 0.79,
+            "avg1": 1.69,
+            "avg7": 1.14,
+            "avg30": 0.74,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 780809,
+            "avg": 0.15,
+            "low": 0.02,
+            "trend": 0.15,
+            "avg1": 0.15,
+            "avg7": 0.58,
+            "avg30": 0.58,
+            "avg-holo": 0.25,
+            "low-holo": 0.02,
+            "trend-holo": 0.25,
+            "avg1-holo": 0.39,
+            "avg7-holo": 0.33,
+            "avg30-holo": 0.26
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562154,
+              "lowPrice": 0.2,
+              "midPrice": 0.48,
+              "highPrice": 999,
+              "marketPrice": 0.47,
+              "directLowPrice": null
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.189Z",
+        "unit": "EUR",
+        "idProduct": 689760,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.02,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.16,
+        "low-holo": 0.02,
+        "trend-holo": 0.34,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.17,
+        "avg30-holo": 0.42
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-008",
+    "localId": "008",
+    "name": "Metal Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.693Z",
+            "unit": "EUR",
+            "idProduct": 689762,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.03,
+            "avg1": 0.04,
+            "avg7": 0.03,
+            "avg30": 0.02,
+            "avg-holo": 0.16,
+            "low-holo": 0.02,
+            "trend-holo": 0.25,
+            "avg1-holo": 0.15,
+            "avg7-holo": 0.15,
+            "avg30-holo": 0.22
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cosmos",
+        "variantId": "3ts5hd5swdcuwzv63t639rp",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.693Z",
+            "unit": "EUR",
+            "idProduct": 735373,
+            "avg": 0.52,
+            "low": 0.02,
+            "trend": 0.38,
+            "avg1": 0.13,
+            "avg7": 0.47,
+            "avg30": 0.53,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "pokeball",
+        "variantId": "3739bbtj3i910y5ynn9xc6ryf",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.693Z",
+            "unit": "EUR",
+            "idProduct": 780810,
+            "avg": 0.15,
+            "low": 0.02,
+            "trend": 0.15,
+            "avg1": 0.15,
+            "avg7": 0.15,
+            "avg30": 0.15,
+            "avg-holo": 0.29,
+            "low-holo": 0.02,
+            "trend-holo": 0.22,
+            "avg1-holo": 0.04,
+            "avg7-holo": 0.19,
+            "avg30-holo": 0.23
+          },
+          "tcgplayer": {
+            "unit": "USD",
+            "updated": "2026-08-13T08:02:35.712Z",
+            "reverse-holofoil": {
+              "productId": 562159,
+              "lowPrice": 0.1,
+              "midPrice": 0.35,
+              "highPrice": 999,
+              "marketPrice": 0.35,
+              "directLowPrice": 0.37
+            }
+          }
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.693Z",
+        "unit": "EUR",
+        "idProduct": 689762,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.03,
+        "avg1": 0.04,
+        "avg7": 0.03,
+        "avg30": 0.02,
+        "avg-holo": 0.16,
+        "low-holo": 0.02,
+        "trend-holo": 0.25,
+        "avg1-holo": 0.15,
+        "avg7-holo": 0.15,
+        "avg30-holo": 0.22
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-009",
+    "localId": "009",
+    "name": "Grass Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 786113,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.06,
+            "avg1": 0.14,
+            "avg7": 0.05,
+            "avg30": 0.03,
+            "avg-holo": 0.17,
+            "low-holo": 0.02,
+            "trend-holo": 0.22,
+            "avg1-holo": 0.28,
+            "avg7-holo": 0.21,
+            "avg30-holo": 0.18
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 809704,
+            "avg": 1.3,
+            "low": 0.2,
+            "trend": 1.43,
+            "avg1": 1.96,
+            "avg7": 1.21,
+            "avg30": 1.18,
+            "avg-holo": 1.19,
+            "low-holo": 0.2,
+            "trend-holo": 1.16,
+            "avg1-holo": 1.78,
+            "avg7-holo": 1.35,
+            "avg30-holo": 1.25
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.764Z",
+        "unit": "EUR",
+        "idProduct": 786113,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.06,
+        "avg1": 0.14,
+        "avg7": 0.05,
+        "avg30": 0.03,
+        "avg-holo": 0.17,
+        "low-holo": 0.02,
+        "trend-holo": 0.22,
+        "avg1-holo": 0.28,
+        "avg7-holo": 0.21,
+        "avg30-holo": 0.18
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-010",
+    "localId": "010",
+    "name": "Fire Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 786114,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.07,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.17,
+            "low-holo": 0.02,
+            "trend-holo": 0.23,
+            "avg1-holo": 0.09,
+            "avg7-holo": 0.19,
+            "avg30-holo": 0.18
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 809705,
+            "avg": 1.08,
+            "low": 0.5,
+            "trend": 1.06,
+            "avg1": 0.99,
+            "avg7": 1.16,
+            "avg30": 1.11,
+            "avg-holo": 1.12,
+            "low-holo": 0.5,
+            "trend-holo": 1.32,
+            "avg1-holo": 1.75,
+            "avg7-holo": 1.27,
+            "avg30-holo": 1.13
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.256Z",
+        "unit": "EUR",
+        "idProduct": 786114,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.07,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.17,
+        "low-holo": 0.02,
+        "trend-holo": 0.23,
+        "avg1-holo": 0.09,
+        "avg7-holo": 0.19,
+        "avg30-holo": 0.18
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-011",
+    "localId": "011",
+    "name": "Water Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 786115,
+            "avg": 0.04,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.02,
+            "avg7": 0.04,
+            "avg30": 0.03,
+            "avg-holo": 0.16,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.18,
+            "avg7-holo": 0.15,
+            "avg30-holo": 0.15
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 809706,
+            "avg": 1.06,
+            "low": 0.03,
+            "trend": 1.18,
+            "avg1": 0.99,
+            "avg7": 1.22,
+            "avg30": 1.17,
+            "avg-holo": 1.2,
+            "low-holo": 0.03,
+            "trend-holo": 1.24,
+            "avg1-holo": 1.75,
+            "avg7-holo": 1.39,
+            "avg30-holo": 1.17
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 786115,
+        "avg": 0.04,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.02,
+        "avg7": 0.04,
+        "avg30": 0.03,
+        "avg-holo": 0.16,
+        "low-holo": 0.02,
+        "trend-holo": 0.18,
+        "avg1-holo": 0.18,
+        "avg7-holo": 0.15,
+        "avg30-holo": 0.15
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-012",
+    "localId": "012",
+    "name": "Lightning Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 786116,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.03,
+            "avg1": 0.03,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.15,
+            "low-holo": 0.02,
+            "trend-holo": 0.21,
+            "avg1-holo": 0.25,
+            "avg7-holo": 0.16,
+            "avg30-holo": 0.15
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 809707,
+            "avg": 1.2,
+            "low": 0.5,
+            "trend": 1.35,
+            "avg1": 0.99,
+            "avg7": 1.18,
+            "avg30": 1.18,
+            "avg-holo": 1.1,
+            "low-holo": 0.5,
+            "trend-holo": 1.14,
+            "avg1-holo": 1.5,
+            "avg7-holo": 1.15,
+            "avg30-holo": 1.13
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.189Z",
+        "unit": "EUR",
+        "idProduct": 786116,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.03,
+        "avg1": 0.03,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.15,
+        "low-holo": 0.02,
+        "trend-holo": 0.21,
+        "avg1-holo": 0.25,
+        "avg7-holo": 0.16,
+        "avg30-holo": 0.15
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-013",
+    "localId": "013",
+    "name": "Psychic Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 786117,
+            "avg": 0.03,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.05,
+            "avg7": 0.04,
+            "avg30": 0.03,
+            "avg-holo": 0.17,
+            "low-holo": 0.02,
+            "trend-holo": 0.13,
+            "avg1-holo": 0.02,
+            "avg7-holo": 0.18,
+            "avg30-holo": 0.17
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 809708,
+            "avg": 1.3,
+            "low": 0.5,
+            "trend": 1.82,
+            "avg1": 2.99,
+            "avg7": 1.55,
+            "avg30": 1.29,
+            "avg-holo": 1.08,
+            "low-holo": 0.5,
+            "trend-holo": 1.38,
+            "avg1-holo": 1.74,
+            "avg7-holo": 1.38,
+            "avg30-holo": 1.14
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 786117,
+        "avg": 0.03,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.05,
+        "avg7": 0.04,
+        "avg30": 0.03,
+        "avg-holo": 0.17,
+        "low-holo": 0.02,
+        "trend-holo": 0.13,
+        "avg1-holo": 0.02,
+        "avg7-holo": 0.18,
+        "avg30-holo": 0.17
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-014",
+    "localId": "014",
+    "name": "Fighting Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 786118,
+            "avg": 0.02,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.02,
+            "avg7": 0.06,
+            "avg30": 0.03,
+            "avg-holo": 0.15,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.19,
+            "avg7-holo": 0.16,
+            "avg30-holo": 0.14
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 809709,
+            "avg": 1.34,
+            "low": 0.49,
+            "trend": 1.43,
+            "avg1": 2.09,
+            "avg7": 1.27,
+            "avg30": 1.19,
+            "avg-holo": 1.05,
+            "low-holo": 0.49,
+            "trend-holo": 1.08,
+            "avg1-holo": 1.75,
+            "avg7-holo": 1.11,
+            "avg30-holo": 1.06
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 786118,
+        "avg": 0.02,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.02,
+        "avg7": 0.06,
+        "avg30": 0.03,
+        "avg-holo": 0.15,
+        "low-holo": 0.02,
+        "trend-holo": 0.18,
+        "avg1-holo": 0.19,
+        "avg7-holo": 0.16,
+        "avg30-holo": 0.14
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-015",
+    "localId": "015",
+    "name": "Darkness Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 786119,
+            "avg": 0.04,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.03,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.19,
+            "low-holo": 0.02,
+            "trend-holo": 0.18,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.2,
+            "avg30-holo": 0.2
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.764Z",
+            "unit": "EUR",
+            "idProduct": 809710,
+            "avg": 1.4,
+            "low": 0.49,
+            "trend": 1.72,
+            "avg1": 2.01,
+            "avg7": 1.35,
+            "avg30": 1.33,
+            "avg-holo": 1.13,
+            "low-holo": 0.49,
+            "trend-holo": 1.12,
+            "avg1-holo": 1.49,
+            "avg7-holo": 1.12,
+            "avg30-holo": 1.14
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.764Z",
+        "unit": "EUR",
+        "idProduct": 786119,
+        "avg": 0.04,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.03,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.19,
+        "low-holo": 0.02,
+        "trend-holo": 0.18,
+        "avg1-holo": 0.1,
+        "avg7-holo": 0.2,
+        "avg30-holo": 0.2
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-016",
+    "localId": "016",
+    "name": "Metal Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 786120,
+            "avg": 0.04,
+            "low": 0.02,
+            "trend": 0.03,
+            "avg1": 0.07,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.19,
+            "low-holo": 0.02,
+            "trend-holo": 0.16,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.16,
+            "avg30-holo": 0.18
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "cracked-ice",
+        "variantId": "1taa1mtxbb835v7njr48v6y8eq20",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 809711,
+            "avg": 1.16,
+            "low": 0.5,
+            "trend": 1.16,
+            "avg1": 1,
+            "avg7": 1.13,
+            "avg30": 1.13,
+            "avg-holo": 1.21,
+            "low-holo": 0.5,
+            "trend-holo": 1.23,
+            "avg1-holo": 1.5,
+            "avg7-holo": 1.21,
+            "avg30-holo": 1.16
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "variantId": "cm4kqul3x1bwlz1f"
+      },
+      {
+        "type": "normal",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "variantId": "gx8bq2hegum3q6irsxlvqxm955ikw9gd1h311",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "player-rewards-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "4f6221d6q70q1pd5gz5mpleqajtabtd6nalq8mg91zztu",
+        "pricing": {
+          "cardmarket": null,
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "stamp": [
+          "professor-program"
+        ],
+        "foil": "cosmos",
+        "variantId": "9c65uu02o61jw39cfwj25zehzm7vtmrthwuo6xen"
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.685Z",
+        "unit": "EUR",
+        "idProduct": 786120,
+        "avg": 0.04,
+        "low": 0.02,
+        "trend": 0.03,
+        "avg1": 0.07,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.19,
+        "low-holo": 0.02,
+        "trend-holo": 0.16,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.16,
+        "avg30-holo": 0.18
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-017",
+    "localId": "017",
+    "name": "Grass Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 836249,
+            "avg": 0.07,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.03,
+            "avg7": 0.02,
+            "avg30": 0.03,
+            "avg-holo": 0.99,
+            "low-holo": 0.1,
+            "trend-holo": 0.17,
+            "avg1-holo": 0.22,
+            "avg7-holo": 0.45,
+            "avg30-holo": 0.45
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.685Z",
+            "unit": "EUR",
+            "idProduct": 836972,
+            "avg": 0.24,
+            "low": 0.02,
+            "trend": 0.24,
+            "avg1": 0.98,
+            "avg7": 0.33,
+            "avg30": 0.26,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0,
+            "avg1-holo": null,
+            "avg7-holo": null,
+            "avg30-holo": null
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.685Z",
+        "unit": "EUR",
+        "idProduct": 836249,
+        "avg": 0.07,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.03,
+        "avg7": 0.02,
+        "avg30": 0.03,
+        "avg-holo": 0.99,
+        "low-holo": 0.1,
+        "trend-holo": 0.17,
+        "avg1-holo": 0.22,
+        "avg7-holo": 0.45,
+        "avg30-holo": 0.45
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-018",
+    "localId": "018",
+    "name": "Fire Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.402Z",
+            "unit": "EUR",
+            "idProduct": 836250,
+            "avg": 0.09,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.02,
+            "avg7": 0.04,
+            "avg30": 0.04,
+            "avg-holo": 0.88,
+            "low-holo": 0.08,
+            "trend-holo": 0.19,
+            "avg1-holo": 0.25,
+            "avg7-holo": 0.39,
+            "avg30-holo": 0.39
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.402Z",
+            "unit": "EUR",
+            "idProduct": 836973,
+            "avg": 0.2,
+            "low": 0.02,
+            "trend": 0.14,
+            "avg1": 0.02,
+            "avg7": 0.18,
+            "avg30": 0.19,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.1,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.1,
+            "avg30-holo": 0.1
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.402Z",
+        "unit": "EUR",
+        "idProduct": 836250,
+        "avg": 0.09,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.02,
+        "avg7": 0.04,
+        "avg30": 0.04,
+        "avg-holo": 0.88,
+        "low-holo": 0.08,
+        "trend-holo": 0.19,
+        "avg1-holo": 0.25,
+        "avg7-holo": 0.39,
+        "avg30-holo": 0.39
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-019",
+    "localId": "019",
+    "name": "Water Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 836251,
+            "avg": 0.05,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.03,
+            "avg7": 0.03,
+            "avg30": 0.04,
+            "avg-holo": 0.88,
+            "low-holo": 0.06,
+            "trend-holo": 0.15,
+            "avg1-holo": 0.23,
+            "avg7-holo": 0.36,
+            "avg30-holo": 0.36
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 836974,
+            "avg": 0.16,
+            "low": 0.02,
+            "trend": 0.11,
+            "avg1": 0.05,
+            "avg7": 0.12,
+            "avg30": 0.16,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.1,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.28,
+            "avg30-holo": 0.28
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 836251,
+        "avg": 0.05,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.03,
+        "avg7": 0.03,
+        "avg30": 0.04,
+        "avg-holo": 0.88,
+        "low-holo": 0.06,
+        "trend-holo": 0.15,
+        "avg1-holo": 0.23,
+        "avg7-holo": 0.36,
+        "avg30-holo": 0.36
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-020",
+    "localId": "020",
+    "name": "Lightning Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 836252,
+            "avg": 0.06,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.02,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.99,
+            "low-holo": 0.08,
+            "trend-holo": 0.25,
+            "avg1-holo": 0.29,
+            "avg7-holo": 0.5,
+            "avg30-holo": 0.5
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.189Z",
+            "unit": "EUR",
+            "idProduct": 836975,
+            "avg": 0.18,
+            "low": 0.02,
+            "trend": 0.13,
+            "avg1": 0.07,
+            "avg7": 0.11,
+            "avg30": 0.18,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.1,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.49,
+            "avg30-holo": 0.49
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.189Z",
+        "unit": "EUR",
+        "idProduct": 836252,
+        "avg": 0.06,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.02,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.99,
+        "low-holo": 0.08,
+        "trend-holo": 0.25,
+        "avg1-holo": 0.29,
+        "avg7-holo": 0.5,
+        "avg30-holo": 0.5
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-021",
+    "localId": "021",
+    "name": "Psychic Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.693Z",
+            "unit": "EUR",
+            "idProduct": 836253,
+            "avg": 0.06,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.03,
+            "avg7": 0.04,
+            "avg30": 0.04,
+            "avg-holo": 0.99,
+            "low-holo": 0.09,
+            "trend-holo": 0.14,
+            "avg1-holo": 0.05,
+            "avg7-holo": 0.51,
+            "avg30-holo": 0.51
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.693Z",
+            "unit": "EUR",
+            "idProduct": 836976,
+            "avg": 0.18,
+            "low": 0.02,
+            "trend": 0.18,
+            "avg1": 0.8,
+            "avg7": 0.22,
+            "avg30": 0.18,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.1,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.2,
+            "avg30-holo": 0.2
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.693Z",
+        "unit": "EUR",
+        "idProduct": 836253,
+        "avg": 0.06,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.03,
+        "avg7": 0.04,
+        "avg30": 0.04,
+        "avg-holo": 0.99,
+        "low-holo": 0.09,
+        "trend-holo": 0.14,
+        "avg1-holo": 0.05,
+        "avg7-holo": 0.51,
+        "avg30-holo": 0.51
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-022",
+    "localId": "022",
+    "name": "Fighting Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 836254,
+            "avg": 0.11,
+            "low": 0.02,
+            "trend": 0.07,
+            "avg1": 0.02,
+            "avg7": 0.04,
+            "avg30": 0.04,
+            "avg-holo": 0.99,
+            "low-holo": 0.02,
+            "trend-holo": 0.12,
+            "avg1-holo": 0.15,
+            "avg7-holo": 0.48,
+            "avg30-holo": 0.48
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.758Z",
+            "unit": "EUR",
+            "idProduct": 836977,
+            "avg": 0.21,
+            "low": 0.02,
+            "trend": 0.14,
+            "avg1": 0.03,
+            "avg7": 0.22,
+            "avg30": 0.2,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.1,
+            "avg1-holo": 0.1,
+            "avg7-holo": 0.2,
+            "avg30-holo": 0.2
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.758Z",
+        "unit": "EUR",
+        "idProduct": 836254,
+        "avg": 0.11,
+        "low": 0.02,
+        "trend": 0.07,
+        "avg1": 0.02,
+        "avg7": 0.04,
+        "avg30": 0.04,
+        "avg-holo": 0.99,
+        "low-holo": 0.02,
+        "trend-holo": 0.12,
+        "avg1-holo": 0.15,
+        "avg7-holo": 0.48,
+        "avg30-holo": 0.48
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-023",
+    "localId": "023",
+    "name": "Darkness Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 836255,
+            "avg": 0.05,
+            "low": 0.02,
+            "trend": 0.04,
+            "avg1": 0.03,
+            "avg7": 0.04,
+            "avg30": 0.04,
+            "avg-holo": 0.64,
+            "low-holo": 0.02,
+            "trend-holo": 0.29,
+            "avg1-holo": 0.33,
+            "avg7-holo": 0.47,
+            "avg30-holo": 0.47
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 836978,
+            "avg": 0.23,
+            "low": 0.02,
+            "trend": 0.18,
+            "avg1": 0.08,
+            "avg7": 0.17,
+            "avg30": 0.23,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.3,
+            "avg1-holo": 0.3,
+            "avg7-holo": 0.3,
+            "avg30-holo": 0.3
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.256Z",
+        "unit": "EUR",
+        "idProduct": 836255,
+        "avg": 0.05,
+        "low": 0.02,
+        "trend": 0.04,
+        "avg1": 0.03,
+        "avg7": 0.04,
+        "avg30": 0.04,
+        "avg-holo": 0.64,
+        "low-holo": 0.02,
+        "trend-holo": 0.29,
+        "avg1-holo": 0.33,
+        "avg7-holo": 0.47,
+        "avg30-holo": 0.47
+      },
+      "tcgplayer": null
+    }
+  },
+  {
+    "category": "Energy",
+    "id": "sve-024",
+    "localId": "024",
+    "name": "Metal Energy",
+    "rarity": "Common",
+    "set": {
+      "cardCount": {
+        "official": 24,
+        "total": 24
+      },
+      "id": "sve",
+      "name": "Scarlet & Violet Energy"
+    },
+    "variants": {
+      "firstEdition": false,
+      "holo": false,
+      "normal": true,
+      "reverse": true,
+      "wPromo": false
+    },
+    "variants_detailed": [
+      {
+        "type": "normal",
+        "size": "standard",
+        "variantId": "endfynwn4n10gzq",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 836256,
+            "avg": 0.06,
+            "low": 0.02,
+            "trend": 0.05,
+            "avg1": 0.02,
+            "avg7": 0.03,
+            "avg30": 0.03,
+            "avg-holo": 0.69,
+            "low-holo": 0.1,
+            "trend-holo": 0.41,
+            "avg1-holo": 0.45,
+            "avg7-holo": 0.45,
+            "avg30-holo": 0.45
+          },
+          "tcgplayer": null
+        }
+      },
+      {
+        "type": "reverse",
+        "size": "standard",
+        "foil": "tinsel",
+        "variantId": "4gbl53whsjw1y7o4q5scl5q",
+        "pricing": {
+          "cardmarket": {
+            "updated": "2026-08-13T08:02:25.256Z",
+            "unit": "EUR",
+            "idProduct": 836979,
+            "avg": 0.21,
+            "low": 0.02,
+            "trend": 0.22,
+            "avg1": 0.34,
+            "avg7": 0.27,
+            "avg30": 0.23,
+            "avg-holo": null,
+            "low-holo": null,
+            "trend-holo": 0.3,
+            "avg1-holo": 0.3,
+            "avg7-holo": 0.3,
+            "avg30-holo": 0.3
+          },
+          "tcgplayer": null
+        }
+      }
+    ],
+    "energyType": "Normal",
+    "legal": {
+      "standard": true,
+      "expanded": true
+    },
+    "updated": "2026-06-18T14:32:08+01:00",
+    "pricing": {
+      "cardmarket": {
+        "updated": "2026-08-13T08:02:25.256Z",
+        "unit": "EUR",
+        "idProduct": 836256,
+        "avg": 0.06,
+        "low": 0.02,
+        "trend": 0.05,
+        "avg1": 0.02,
+        "avg7": 0.03,
+        "avg30": 0.03,
+        "avg-holo": 0.69,
+        "low-holo": 0.1,
+        "trend-holo": 0.41,
+        "avg1-holo": 0.45,
+        "avg7-holo": 0.45,
+        "avg30-holo": 0.45
+      },
+      "tcgplayer": null
+    }
+  }
+]

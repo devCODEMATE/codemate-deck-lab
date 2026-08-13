@@ -1,0 +1,922 @@
+[
+  {
+    "id": "swsh12.5",
+    "name": "Crown Zenith",
+    "logo": "https://assets.tcgdex.net/en/swsh/swsh12.5/logo",
+    "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol",
+    "serie": {
+      "id": "swsh",
+      "name": "Sword & Shield"
+    },
+    "releaseDate": "2023-01-20",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 69,
+      "normal": 93,
+      "official": 159,
+      "reverse": 112,
+      "total": 160
+    }
+  },
+  {
+    "id": "swsh12.5gg",
+    "name": "Crown Zenith Galarian Gallery",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "swsh",
+      "name": "Sword & Shield"
+    },
+    "releaseDate": "2023-01-20",
+    "tcgOnline": "CRZ",
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 70,
+      "normal": 0,
+      "official": 70,
+      "reverse": 0,
+      "total": 70
+    }
+  },
+  {
+    "id": "svp",
+    "name": "SVP Black Star Promos",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-03-31",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 280,
+      "normal": 48,
+      "official": 225,
+      "reverse": 1,
+      "total": 226
+    }
+  },
+  {
+    "id": "sve",
+    "name": "Scarlet & Violet Energy",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-03-31",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 40,
+      "official": 24,
+      "reverse": 72,
+      "total": 24
+    }
+  },
+  {
+    "id": "sv01",
+    "name": "Scarlet & Violet",
+    "logo": "https://assets.tcgdex.net/en/sv/sv01/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-03-31",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 93,
+      "normal": 165,
+      "official": 198,
+      "reverse": 186,
+      "total": 258
+    }
+  },
+  {
+    "id": "sv02",
+    "name": "Paldea Evolved",
+    "logo": "https://assets.tcgdex.net/en/sv/sv02/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-06-09",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 153,
+      "normal": 154,
+      "official": 193,
+      "reverse": 176,
+      "total": 279
+    }
+  },
+  {
+    "id": "2023sv",
+    "name": "McDonald's Collection 2023",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "mc",
+      "name": "McDonald's Collection"
+    },
+    "releaseDate": "2023-08-01",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 6,
+      "normal": 9,
+      "official": 15,
+      "reverse": 0,
+      "total": 15
+    }
+  },
+  {
+    "id": "sv03",
+    "name": "Obsidian Flames",
+    "logo": "https://assets.tcgdex.net/en/sv/sv03/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-08-11",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 79,
+      "normal": 170,
+      "official": 197,
+      "reverse": 179,
+      "total": 230
+    }
+  },
+  {
+    "id": "sv03.5",
+    "name": "151",
+    "logo": "https://assets.tcgdex.net/en/sv/sv03.5/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-09-22",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 90,
+      "normal": 135,
+      "official": 165,
+      "reverse": 158,
+      "total": 207
+    }
+  },
+  {
+    "id": "mfb",
+    "name": "My First Battle",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-09-29",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 48,
+      "official": 48,
+      "reverse": 0,
+      "total": 48
+    }
+  },
+  {
+    "id": "sv04",
+    "name": "Paradox Rift",
+    "logo": "https://assets.tcgdex.net/en/sv/sv04/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-11-03",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 148,
+      "normal": 135,
+      "official": 182,
+      "reverse": 166,
+      "total": 266
+    }
+  },
+  {
+    "id": "sv04.5",
+    "name": "Paldean Fates",
+    "logo": "https://assets.tcgdex.net/en/sv/sv04.5/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-01-26",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 183,
+      "normal": 65,
+      "official": 91,
+      "reverse": 85,
+      "total": 245
+    }
+  },
+  {
+    "id": "sv05",
+    "name": "Temporal Forces",
+    "logo": null,
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-03-22",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 125,
+      "normal": 164,
+      "official": 162,
+      "reverse": 143,
+      "total": 218
+    }
+  },
+  {
+    "id": "sv06",
+    "name": "Twilight Masquerade",
+    "logo": "https://assets.tcgdex.net/en/sv/sv06/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-05-24",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 114,
+      "normal": 137,
+      "official": 167,
+      "reverse": 147,
+      "total": 226
+    }
+  },
+  {
+    "id": "sv06.5",
+    "name": "Shrouded Fable",
+    "logo": "https://assets.tcgdex.net/en/sv/sv06.5/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-08-02",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 59,
+      "normal": 48,
+      "official": 64,
+      "reverse": 55,
+      "total": 99
+    }
+  },
+  {
+    "id": "sv07",
+    "name": "Stellar Crown",
+    "logo": "https://assets.tcgdex.net/en/sv/sv07/logo",
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-09-13",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 82,
+      "normal": 116,
+      "official": 142,
+      "reverse": 125,
+      "total": 175
+    }
+  },
+  {
+    "id": "P-A",
+    "name": "Promos-A",
+    "logo": "https://assets.tcgdex.net/en/tcgp/P-A/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2024-10-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 0,
+      "reverse": 0,
+      "total": 100
+    }
+  },
+  {
+    "id": "A1",
+    "name": "Genetic Apex",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A1/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/A1/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2024-10-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 226,
+      "reverse": 0,
+      "total": 286
+    }
+  },
+  {
+    "id": "sv08",
+    "name": "Surging Sparks",
+    "logo": "https://assets.tcgdex.net/en/sv/sv08/logo",
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2024-11-08",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 125,
+      "normal": 163,
+      "official": 191,
+      "reverse": 165,
+      "total": 252
+    }
+  },
+  {
+    "id": "2024sv",
+    "name": "McDonald's Collection 2024",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "mc",
+      "name": "McDonald's Collection"
+    },
+    "releaseDate": "2024-12-04",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 7,
+      "normal": 8,
+      "official": 15,
+      "reverse": 0,
+      "total": 15
+    }
+  },
+  {
+    "id": "A1a",
+    "name": "Mythical Island",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A1a/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2024-12-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 68,
+      "reverse": 0,
+      "total": 86
+    }
+  },
+  {
+    "id": "sv08.5",
+    "name": "Prismatic Evolutions",
+    "logo": "https://assets.tcgdex.net/en/sv/sv08.5/logo",
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-01-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 127,
+      "normal": 81,
+      "official": 131,
+      "reverse": 268,
+      "total": 180
+    }
+  },
+  {
+    "id": "A2",
+    "name": "Space-Time Smackdown",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A2/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-01-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 140,
+      "reverse": 0,
+      "total": 207
+    }
+  },
+  {
+    "id": "A2a",
+    "name": "Triumphant Light",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A2a/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/A2a/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-02-28",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 75,
+      "reverse": 0,
+      "total": 96
+    }
+  },
+  {
+    "id": "A2b",
+    "name": "Shining Revelry",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A2b/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/A2b/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-03-27",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 72,
+      "reverse": 0,
+      "total": 111
+    }
+  },
+  {
+    "id": "sv09",
+    "name": "Journey Together",
+    "logo": "https://assets.tcgdex.net/en/sv/sv09/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-03-28",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 103,
+      "normal": 145,
+      "official": 159,
+      "reverse": 143,
+      "total": 190
+    }
+  },
+  {
+    "id": "A3",
+    "name": "Celestial Guardians",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A3/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-04-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 155,
+      "reverse": 0,
+      "total": 239
+    }
+  },
+  {
+    "id": "A3a",
+    "name": "Extradimensional Crisis",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-05-29",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 69,
+      "reverse": 0,
+      "total": 103
+    }
+  },
+  {
+    "id": "sv10",
+    "name": "Destined Rivals",
+    "logo": "https://assets.tcgdex.net/en/sv/sv10/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-05-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 119,
+      "normal": 152,
+      "official": 182,
+      "reverse": 165,
+      "total": 244
+    }
+  },
+  {
+    "id": "A3b",
+    "name": "Eevee Grove",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-06-26",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 69,
+      "reverse": 0,
+      "total": 107
+    }
+  },
+  {
+    "id": "sv10.5w",
+    "name": "White Flare",
+    "logo": "https://assets.tcgdex.net/en/sv/sv10.5w/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-07-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 107,
+      "normal": 71,
+      "official": 86,
+      "reverse": 226,
+      "total": 173
+    }
+  },
+  {
+    "id": "sv10.5b",
+    "name": "Black Bolt",
+    "logo": "https://assets.tcgdex.net/en/sv/sv10.5b/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-07-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 102,
+      "normal": 72,
+      "official": 86,
+      "reverse": 232,
+      "total": 172
+    }
+  },
+  {
+    "id": "A4",
+    "name": "Wisdom of Sea and Sky",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A4/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-07-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 161,
+      "reverse": 0,
+      "total": 241
+    }
+  },
+  {
+    "id": "A4a",
+    "name": "Secluded Springs",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A4a/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/A4a/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-08-28",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 71,
+      "reverse": 0,
+      "total": 105
+    }
+  },
+  {
+    "id": "mee",
+    "name": "Mega Evolution Energy",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2025-09-25",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 8,
+      "official": 8,
+      "reverse": 8,
+      "total": 8
+    }
+  },
+  {
+    "id": "me01",
+    "name": "Mega Evolution",
+    "logo": "https://assets.tcgdex.net/en/me/me01/logo",
+    "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol",
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2025-09-26",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 105,
+      "normal": 131,
+      "official": 132,
+      "reverse": 123,
+      "total": 188
+    }
+  },
+  {
+    "id": "mep",
+    "name": "MEP Black Star Promos",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2025-09-26",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 88,
+      "normal": 0,
+      "official": 0,
+      "reverse": 0,
+      "total": 60
+    }
+  },
+  {
+    "id": "B1",
+    "name": "Mega Rising",
+    "logo": "https://assets.tcgdex.net/en/tcgp/B1/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/B1/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-10-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 226,
+      "reverse": 0,
+      "total": 331
+    }
+  },
+  {
+    "id": "me02",
+    "name": "Phantasmal Flames",
+    "logo": "https://assets.tcgdex.net/en/me/me02/logo",
+    "symbol": null,
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2025-11-14",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 60,
+      "normal": 79,
+      "official": 94,
+      "reverse": 84,
+      "total": 130
+    }
+  },
+  {
+    "id": "B1a",
+    "name": "Crimson Blaze",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2025-12-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 69,
+      "reverse": 0,
+      "total": 103
+    }
+  },
+  {
+    "id": "B2",
+    "name": "Fantastical Parade",
+    "logo": "https://assets.tcgdex.net/en/tcgp/B2/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/B2/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2026-01-29",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 155,
+      "reverse": 0,
+      "total": 234
+    }
+  },
+  {
+    "id": "me02.5",
+    "name": "Ascended Heroes",
+    "logo": "https://assets.tcgdex.net/en/me/me02.5/logo",
+    "symbol": "https://assets.tcgdex.net/univ/me/me02.5/symbol",
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2026-01-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 142,
+      "normal": 153,
+      "official": 217,
+      "reverse": 318,
+      "total": 295
+    }
+  },
+  {
+    "id": "B2a",
+    "name": "Paldean Wonders",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2026-02-26",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 93,
+      "reverse": 0,
+      "total": 131
+    }
+  },
+  {
+    "id": "me03",
+    "name": "Perfect Order",
+    "logo": "https://assets.tcgdex.net/en/me/me03/logo",
+    "symbol": "https://assets.tcgdex.net/univ/me/me03/symbol",
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2026-03-27",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 64,
+      "normal": 88,
+      "official": 88,
+      "reverse": 79,
+      "total": 124
+    }
+  },
+  {
+    "id": "me04",
+    "name": "Chaos Rising",
+    "logo": "https://assets.tcgdex.net/en/me/me04/logo",
+    "symbol": "https://assets.tcgdex.net/univ/me/me04/symbol",
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2026-05-22",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 58,
+      "normal": 68,
+      "official": 86,
+      "reverse": 0,
+      "total": 122
+    }
+  },
+  {
+    "id": "me05",
+    "name": "Pitch Black",
+    "logo": "https://assets.tcgdex.net/en/me/me05/logo",
+    "symbol": "https://assets.tcgdex.net/univ/me/me05/symbol",
+    "serie": {
+      "id": "me",
+      "name": "Mega Evolution"
+    },
+    "releaseDate": "2026-07-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 53,
+      "normal": 67,
+      "official": 84,
+      "reverse": 67,
+      "total": 120
+    }
+  }
+]
