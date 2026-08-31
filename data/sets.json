@@ -1,5 +1,25 @@
 [
   {
+    "id": "swsh12.5gg",
+    "name": "Crown Zenith Galarian Gallery",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "swsh",
+      "name": "Sword & Shield"
+    },
+    "releaseDate": "2023-01-20",
+    "tcgOnline": "CRZ",
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 70,
+      "normal": 0,
+      "official": 70,
+      "reverse": 0,
+      "total": 70
+    }
+  },
+  {
     "id": "swsh12.5",
     "name": "Crown Zenith",
     "logo": "https://assets.tcgdex.net/en/swsh/swsh12.5/logo",
@@ -20,23 +40,23 @@
     }
   },
   {
-    "id": "swsh12.5gg",
-    "name": "Crown Zenith Galarian Gallery",
-    "logo": null,
-    "symbol": null,
+    "id": "sv01",
+    "name": "Scarlet & Violet",
+    "logo": "https://assets.tcgdex.net/en/sv/sv01/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol",
     "serie": {
-      "id": "swsh",
-      "name": "Sword & Shield"
+      "id": "sv",
+      "name": "Scarlet & Violet"
     },
-    "releaseDate": "2023-01-20",
-    "tcgOnline": "CRZ",
+    "releaseDate": "2023-03-31",
+    "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 70,
-      "normal": 0,
-      "official": 70,
-      "reverse": 0,
-      "total": 70
+      "holo": 93,
+      "normal": 165,
+      "official": 198,
+      "reverse": 186,
+      "total": 258
     }
   },
   {
@@ -77,26 +97,6 @@
       "official": 24,
       "reverse": 72,
       "total": 24
-    }
-  },
-  {
-    "id": "sv01",
-    "name": "Scarlet & Violet",
-    "logo": "https://assets.tcgdex.net/en/sv/sv01/logo",
-    "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol",
-    "serie": {
-      "id": "sv",
-      "name": "Scarlet & Violet"
-    },
-    "releaseDate": "2023-03-31",
-    "tcgOnline": null,
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 93,
-      "normal": 165,
-      "official": 198,
-      "reverse": 186,
-      "total": 258
     }
   },
   {
@@ -152,8 +152,8 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 79,
-      "normal": 170,
+      "holo": 93,
+      "normal": 184,
       "official": 197,
       "reverse": 179,
       "total": 230
@@ -320,26 +320,6 @@
     }
   },
   {
-    "id": "P-A",
-    "name": "Promos-A",
-    "logo": "https://assets.tcgdex.net/en/tcgp/P-A/logo",
-    "symbol": null,
-    "serie": {
-      "id": "tcgp",
-      "name": "Pokémon TCG Pocket"
-    },
-    "releaseDate": "2024-10-30",
-    "tcgOnline": null,
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 0,
-      "normal": 0,
-      "official": 0,
-      "reverse": 0,
-      "total": 100
-    }
-  },
-  {
     "id": "A1",
     "name": "Genetic Apex",
     "logo": "https://assets.tcgdex.net/en/tcgp/A1/logo",
@@ -357,6 +337,26 @@
       "official": 226,
       "reverse": 0,
       "total": 286
+    }
+  },
+  {
+    "id": "P-A",
+    "name": "Promos-A",
+    "logo": "https://assets.tcgdex.net/en/tcgp/P-A/logo",
+    "symbol": null,
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2024-10-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 0,
+      "reverse": 0,
+      "total": 100
     }
   },
   {
@@ -732,11 +732,11 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 88,
-      "normal": 0,
+      "holo": 113,
+      "normal": 1,
       "official": 0,
       "reverse": 0,
-      "total": 60
+      "total": 89
     }
   },
   {
@@ -772,8 +772,8 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 60,
-      "normal": 79,
+      "holo": 68,
+      "normal": 78,
       "official": 94,
       "reverse": 84,
       "total": 130
@@ -832,10 +832,10 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 142,
-      "normal": 153,
+      "holo": 154,
+      "normal": 156,
       "official": 217,
-      "reverse": 318,
+      "reverse": 319,
       "total": 295
     }
   },
@@ -872,8 +872,8 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 64,
-      "normal": 88,
+      "holo": 71,
+      "normal": 87,
       "official": 88,
       "reverse": 79,
       "total": 124
@@ -892,10 +892,10 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 58,
-      "normal": 68,
+      "holo": 62,
+      "normal": 69,
       "official": 86,
-      "reverse": 0,
+      "reverse": 76,
       "total": 122
     }
   },
@@ -912,10 +912,10 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 53,
-      "normal": 67,
+      "holo": 58,
+      "normal": 68,
       "official": 84,
-      "reverse": 67,
+      "reverse": 74,
       "total": 120
     }
   }
