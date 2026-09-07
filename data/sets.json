@@ -1,25 +1,5 @@
 [
   {
-    "id": "swsh12.5gg",
-    "name": "Crown Zenith Galarian Gallery",
-    "logo": null,
-    "symbol": null,
-    "serie": {
-      "id": "swsh",
-      "name": "Sword & Shield"
-    },
-    "releaseDate": "2023-01-20",
-    "tcgOnline": "CRZ",
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 70,
-      "normal": 0,
-      "official": 70,
-      "reverse": 0,
-      "total": 70
-    }
-  },
-  {
     "id": "swsh12.5",
     "name": "Crown Zenith",
     "logo": "https://assets.tcgdex.net/en/swsh/swsh12.5/logo",
@@ -37,6 +17,26 @@
       "official": 159,
       "reverse": 112,
       "total": 160
+    }
+  },
+  {
+    "id": "swsh12.5gg",
+    "name": "Crown Zenith Galarian Gallery",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "swsh",
+      "name": "Sword & Shield"
+    },
+    "releaseDate": "2023-01-20",
+    "tcgOnline": "CRZ",
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 70,
+      "normal": 0,
+      "official": 70,
+      "reverse": 0,
+      "total": 70
     }
   },
   {
@@ -60,26 +60,6 @@
     }
   },
   {
-    "id": "svp",
-    "name": "SVP Black Star Promos",
-    "logo": null,
-    "symbol": null,
-    "serie": {
-      "id": "sv",
-      "name": "Scarlet & Violet"
-    },
-    "releaseDate": "2023-03-31",
-    "tcgOnline": null,
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 280,
-      "normal": 48,
-      "official": 225,
-      "reverse": 1,
-      "total": 226
-    }
-  },
-  {
     "id": "sve",
     "name": "Scarlet & Violet Energy",
     "logo": null,
@@ -100,6 +80,26 @@
     }
   },
   {
+    "id": "svp",
+    "name": "SVP Black Star Promos",
+    "logo": null,
+    "symbol": null,
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2023-03-31",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 280,
+      "normal": 48,
+      "official": 225,
+      "reverse": 1,
+      "total": 226
+    }
+  },
+  {
     "id": "sv02",
     "name": "Paldea Evolved",
     "logo": "https://assets.tcgdex.net/en/sv/sv02/logo",
@@ -112,7 +112,7 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 153,
+      "holo": 154,
       "normal": 154,
       "official": 193,
       "reverse": 176,
@@ -320,26 +320,6 @@
     }
   },
   {
-    "id": "A1",
-    "name": "Genetic Apex",
-    "logo": "https://assets.tcgdex.net/en/tcgp/A1/logo",
-    "symbol": "https://assets.tcgdex.net/univ/tcgp/A1/symbol",
-    "serie": {
-      "id": "tcgp",
-      "name": "Pokémon TCG Pocket"
-    },
-    "releaseDate": "2024-10-30",
-    "tcgOnline": null,
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 0,
-      "normal": 0,
-      "official": 226,
-      "reverse": 0,
-      "total": 286
-    }
-  },
-  {
     "id": "P-A",
     "name": "Promos-A",
     "logo": "https://assets.tcgdex.net/en/tcgp/P-A/logo",
@@ -357,6 +337,26 @@
       "official": 0,
       "reverse": 0,
       "total": 100
+    }
+  },
+  {
+    "id": "A1",
+    "name": "Genetic Apex",
+    "logo": "https://assets.tcgdex.net/en/tcgp/A1/logo",
+    "symbol": "https://assets.tcgdex.net/univ/tcgp/A1/symbol",
+    "serie": {
+      "id": "tcgp",
+      "name": "Pokémon TCG Pocket"
+    },
+    "releaseDate": "2024-10-30",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 0,
+      "normal": 0,
+      "official": 226,
+      "reverse": 0,
+      "total": 286
     }
   },
   {
@@ -600,26 +600,6 @@
     }
   },
   {
-    "id": "sv10.5w",
-    "name": "White Flare",
-    "logo": "https://assets.tcgdex.net/en/sv/sv10.5w/logo",
-    "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol",
-    "serie": {
-      "id": "sv",
-      "name": "Scarlet & Violet"
-    },
-    "releaseDate": "2025-07-17",
-    "tcgOnline": null,
-    "cardCount": {
-      "firstEd": 0,
-      "holo": 107,
-      "normal": 71,
-      "official": 86,
-      "reverse": 226,
-      "total": 173
-    }
-  },
-  {
     "id": "sv10.5b",
     "name": "Black Bolt",
     "logo": "https://assets.tcgdex.net/en/sv/sv10.5b/logo",
@@ -632,11 +612,31 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 102,
-      "normal": 72,
+      "holo": 105,
+      "normal": 70,
       "official": 86,
       "reverse": 232,
       "total": 172
+    }
+  },
+  {
+    "id": "sv10.5w",
+    "name": "White Flare",
+    "logo": "https://assets.tcgdex.net/en/sv/sv10.5w/logo",
+    "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol",
+    "serie": {
+      "id": "sv",
+      "name": "Scarlet & Violet"
+    },
+    "releaseDate": "2025-07-17",
+    "tcgOnline": null,
+    "cardCount": {
+      "firstEd": 0,
+      "holo": 108,
+      "normal": 70,
+      "official": 86,
+      "reverse": 232,
+      "total": 173
     }
   },
   {
@@ -832,10 +832,10 @@
     "tcgOnline": null,
     "cardCount": {
       "firstEd": 0,
-      "holo": 154,
+      "holo": 155,
       "normal": 156,
       "official": 217,
-      "reverse": 319,
+      "reverse": 318,
       "total": 295
     }
   },
